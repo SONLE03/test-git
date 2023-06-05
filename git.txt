@@ -1,0 +1,100 @@
+C:\Users\sonle>cd ../../
+
+C:\>cd tmp
+
+C:\tmp>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\tmp>cd hello
+
+C:\tmp\hello>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\tmp\hello>git add main.cpp
+
+C:\tmp\hello>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.cpp
+
+
+C:\tmp\hello>git commit -m "Add hello world"
+[master (root-commit) aa51e84] Add hello world
+ 1 file changed, 8 insertions(+)
+ create mode 100644 main.cpp
+
+C:\tmp\hello>git config  -local user.email
+error: did you mean `--local` (with two dashes)?
+
+C:\tmp\hello>git config --local user.email
+
+C:\tmp\hello>git config --global user.email
+sonle102003@gmail.com
+
+C:\tmp\hello>git log
+commit aa51e8401fbeb24cfde299f776dd1365bd5325a7 (HEAD -> master)
+Author: SONLE03 <sonle102003@gmail.com>
+Date:   Mon Mar 20 13:54:13 2023 +0700
+
+    Add hello world
+
+C:\tmp\hello>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\tmp\hello>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        fdghsfuhaosg.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\tmp\hello>git add  --all
+
+C:\tmp\hello>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fdghsfuhaosg.cpp
+
+
+C:\tmp\hello>git commnit -m "Add new file"
+git: 'commnit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+C:\tmp\hello>git commit -m "add new file"
+[master 53258f2] add new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fdghsfuhaosg.cpp
+
+C:\tmp\hello>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\tmp\hello>
+
+
+Host github.com
+ User sonle102003@gmail.com
+ HostName github.com
+ IdentityFile: đường dẫn file.ssh
+
+git remote add origin <ssh.git>
+git push origin
+
+
